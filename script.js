@@ -5,7 +5,7 @@ function decimalToBinary(num) {
   	ans+=num%2
 	  num/=2
   }
-	console.log(ans.reverse())
+	console.log([...ans].reduce((x, y) => y.concat(x)))
 }
 
 window.decimalToBinary = decimalToBinary;
